@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>E-Cart: The Real Place to Buy From</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="home">Home</a></li>
+            <li><a href="#" class="prods">Products</a></li>
+            <li><a href="#" class="cart">Cart</a></li>
+            <li><a href="#" class="add">Add Product</a></li>
+            <li><input type="search" placeholder="enter product name to search" class="search"></li>
+
+        </ul>
+
+    </nav>
+    <main>
+        <section id="add-product" class="container" >
+            <h2>Add New Product</h2>
+            
+                <input type="text" class="name" placeholder="Name of product" required>
+                <input type="number" class="price" placeholder="Price of product" min="1" required>
+                <input type="text" class="type" placeholder="Type of product" required>
+                <textarea class="description" placeholder="Enter the description" required></textarea>
+                <button type="submit" class="adBtn">Add Product</button>
+            
+        </section>
+
+        <section id="products" class="container" >
+            <h2>Products</h2>
+            <div class="product-list">
+                <!-- Product cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="cart" class="container" >
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cart-total-amount">0.00</span></h3>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </section>
+
+       
+    </main>
+    <footer>
+        <p>&copy; 2024 E-Cart. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
